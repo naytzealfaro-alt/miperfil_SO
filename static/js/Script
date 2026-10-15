@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naytze</title>
+  <meta name="description" content="Naytze, estudiante de Ingeniería en TIC. Tecnología, creatividad, uñas y belleza.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="nav__logo" href="#inicio">Naytze</a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#me-gusta">Me gusta</a>
+      <a href="#mi-gente">Mi gente</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__text">
+        <p class="hero__hello">Hola, soy</p>
+        <h1 class="hero__name">Naytze ✨</h1>
+        <p class="hero__role">Estudiante de Ingeniería en Tecnologías de la Información y Comunicación.</p>
+        <a class="btn" href="#sobre-mi">Conóceme</a>
+      </div>
+
+      <figure class="hero__photo">
+        <img src="../static/img/uñas.jpeg" alt="Mano con uñas almendradas de colores: rojo, amarillo, morado, naranja y verde" data-zoom>
+      </figure>
+
+      <!-- Paleta interactiva: cambia el color de acento de toda la página -->
+      <div class="palette" role="group" aria-label="Elige un color de acento">
+        <button class="swatch is-active" style="--c:#bd6f95" data-color="#bd6f95" aria-label="Color #bd6f95"></button>
+        <button class="swatch" style="--c:#c8799f" data-color="#c8799f" aria-label="Color #c8799f"></button>
+        <button class="swatch" style="--c:#d484aa" data-color="#d484aa" aria-label="Color #d484aa"></button>
+        <button class="swatch" style="--c:#df8fb5" data-color="#df8fb5" aria-label="Color #df8fb5"></button>
+        <button class="swatch" style="--c:#eb9ac0" data-color="#eb9ac0" aria-label="Color #eb9ac0"></button>
+        <button class="swatch" style="--c:#f3aacb" data-color="#f3aacb" aria-label="Color #f3aacb"></button>
+        <button class="swatch" style="--c:#f7bfd8" data-color="#f7bfd8" aria-label="Color #f7bfd8"></button>
+        <button class="swatch" style="--c:#fbd5e5" data-color="#fbd5e5" aria-label="Color #fbd5e5"></button>
+        <button class="swatch" style="--c:#fdeaf2" data-color="#fdeaf2" aria-label="Color #fdeaf2"></button>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section about" id="sobre-mi">
+      <h2 class="section__title">Sobre mí</h2>
+      <div class="about__body">
+        <p>Me gusta aprender cosas nuevas, desarrollar mis habilidades y combinar mi lado tecnológico con mi creatividad.</p>
+        <p>Me considero una persona creativa, dedicada y apasionada por las cosas que me gustan.</p>
+      </div>
+    </section>
+
+    <!-- ME GUSTA -->
+    <section class="section" id="me-gusta">
+      <h2 class="section__title">Lo que me gusta</h2>
+
+      <div class="grid grid--two">
+        <figure class="tile">
+          <img src="../static/img/uñas.jpeg" alt="Diseño de uñas de colores" data-zoom>
+          <figcaption>
+            <h3>Diseños de uñas 💅🏻</h3>
+            <p>Crear diseños es mi forma favorita de mezclar color y detalle.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="../static/img/belleza.jpeg" alt="Belleza y moda" data-zoom>
+          <figcaption>
+            <h3>Belleza y moda 💄🎀</h3>
+            <p>Todo lo relacionado con maquillaje, estilo y verse bien.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <ul class="chips" aria-label="Más cosas que disfruto">
+        <li>Series 🎬</li>
+        <li>Películas 🎬</li>
+        <li>Tecnología</li>
+        <li>Diseño</li>
+        <li>Aprender algo nuevo</li>
+      </ul>
+    </section>
+
+    <!-- MI GENTE -->
+    <section class="section" id="mi-gente">
+      <h2 class="section__title">Mi gente</h2>
+
+      <div class="grid grid--three">
+        <figure class="tile">
+          <img src="../static/img/novio.jpeg" alt="Mi novio y yo" data-zoom>
+          <figcaption>
+            <h3>Mi novio 💕</h3>
+            <p>Mi compañero de planes y de vida.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="../static/img/andy.jpeg" alt="Mi mejor amiga y yo" data-zoom>
+          <figcaption>
+            <h3>Mi mejor amiga 🫶🏻</h3>
+            <p>Risas aseguradas, siempre.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="../static/img/coco.jpeg" alt="Gatita de ojos azules mirando hacia arriba" data-zoom>
+          <figcaption>
+            <h3>Mi gatita 🐱</h3>
+            <p>La que más consiento.</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="family">También me encanta pasar tiempo con mi familia.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Naytze · hecho con cariño</p>
+  </footer>
+
+  <!-- Visor de imágenes -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Cerrar">×</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="../static/js/script.js"></script>
+</body>
+</html>
